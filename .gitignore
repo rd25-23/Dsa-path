@@ -22,3 +22,8 @@ venv/
 # Java compiled files
 *.class
 *.jar
+
+tempCodeRunnerFile.cpp
+all_patterns
+how_to_do_loop
+loop_maker
