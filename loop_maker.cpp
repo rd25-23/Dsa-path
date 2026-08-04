@@ -204,6 +204,7 @@ void pattern11()
     cout << "Enter the value of n for pattern 11:";
     cin >> n;
     int start = 1;
+    // sir way
     for (int i = 0; i < n; i++)
     {
         if (i % 2 == 0)
@@ -228,6 +229,7 @@ void pattern11_2ndway()
     cout << "Enter the value of n for pattern 11 2nd version:";
     cin >> n;
     string fin, r = "1", p = "0";
+    // my way
     for (int i = 0; i < n; i++)
     {
         if (i % 2 == 0)
