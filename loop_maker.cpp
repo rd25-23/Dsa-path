@@ -88,15 +88,33 @@ void pattern6()
 void pattern7()
 {
     int n;
-    cout << "Enter the value of n for pattern7:";
+    cout << "Enter the value of n for pattern 7:";
     cin >> n;
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n - i; j++)
+        for (int j = 0; j < n - i; j++)
         {
             cout << " ";
         }
-        for (int j = 1; j <= (2 * i - 1); j++)
+        for (int j = 0; j < 2 * i - 1; j++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+}
+void pattern8()
+{
+    int n;
+    cout << "Enter the value of n for pattern 8:";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j < i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j <= (n * 2) - (2 * i - 1); j++)
         {
             cout << "*";
         }
@@ -105,11 +123,6 @@ void pattern7()
 }
 int main()
 {
-    pattern1();
-    pattern2();
-    pattern3();
-    pattern4();
-    pattern5();
-    pattern6();
-    pattern7();
+
+    pattern8();
 }
