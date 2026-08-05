@@ -243,19 +243,45 @@ void pattern11_2ndway()
         cout << fin << "\n";
     }
 }
+void pattern12()
+{
+    int n;
+    cout << "Enter the value of n for pattern 12:";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j;
+        }
+        for (int j = 1; j <= n - i; j++)
+        {
+            cout << "  ";
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            cout << i - j + 1;
+        }
+        cout << "\n";
+    }
+}
+void pattern13()
+{
+    int n;
+    cout << "Enter the value of n for pattern 13:";
+    cin >> n;
+    int l = 1;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << l << " ";
+            l++;
+        }
+        cout << "\n";
+    }
+}
 int main()
 {
-    pattern1();
-    pattern2();
-    pattern3();
-    pattern4();
-    pattern5();
-    pattern6();
-    pattern7();
-    pattern8();
-    pattern9();
-    pattern10();
-    pattern10_2ndway();
-    pattern11();
-    pattern11_2ndway();
+    pattern13();
 }
