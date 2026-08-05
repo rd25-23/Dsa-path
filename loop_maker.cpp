@@ -281,7 +281,76 @@ void pattern13()
         cout << "\n";
     }
 }
+void pattern14()
+{
+    int n;
+    cout << "Enter the value of n for pattern 14:";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << char(j + 64);
+        }
+        cout << "\n";
+    }
+}
+void pattern15()
+{
+    int n;
+    cout << "Enter the value of n for pattern 15:";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n - i; j++)
+        {
+            cout << char(j + 65);
+        }
+        cout << "\n";
+    }
+}
+void pattern16()
+{
+    int n;
+    cout << "Enter the value of n for pattern 16:";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << char(i + 65);
+        }
+        cout << "\n";
+    }
+}
+void pattern17()
+{
+    int n;
+    cout << "Enter the value of n for pattern 17:";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            cout << " ";
+        }
+        int l = 64;
+        for (int j = 1; j < 2 * i; j++)
+        {
+            if (j <= i)
+            {
+                cout << char(j + 64);
+            }
+            else
+            {
+                cout << char(l + i - 1);
+                l--;
+            }
+        }
+        cout << "\n";
+    }
+}
 int main()
 {
-    pattern13();
+    pattern17();
 }
