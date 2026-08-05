@@ -327,6 +327,8 @@ void pattern17()
 {
     int n;
     cout << "Enter the value of n for pattern 17:";
+    /* hardest one yet from all the one i have solved try doing it again with
+    no variable   */
     cin >> n;
     for (int i = 1; i <= n; i++)
     {
@@ -352,5 +354,23 @@ void pattern17()
 }
 int main()
 {
+    pattern1();
+    pattern2();
+    pattern3();
+    pattern4();
+    pattern5();
+    pattern6();
+    pattern7();
+    pattern8();
+    pattern9();
+    pattern10();
+    pattern10_2ndway();
+    pattern11();
+    pattern11_2ndway();
+    pattern12();
+    pattern13();
+    pattern14();
+    pattern15();
+    pattern16();
     pattern17();
 }
