@@ -357,6 +357,7 @@ void pattern18()
 {
     int n;
     cout << "Enter the vallue of n for pattern 18:";
+    /* i have done using different approach then striver */
     cin >> n;
     for (int i = 0; i < n; i++)
     {
@@ -367,8 +368,99 @@ void pattern18()
         cout << "\n";
     }
 }
+void pattern19()
+{
+    int n;
+    cout << "Enter the value of n for pattern 19:";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n - i; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j < i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j < n - i; j++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 1; j < n - i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j < n - i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+}
+void pattern20()
+{
+    int n;
+    cout << "Enter the value of n for pattern 20:";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 1; j < n - i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j < n - i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j <= i; j++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 1; j < n - i; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j <= i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j <= i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j < n - i; j++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+}
 int main()
 {
-    patt
-    pattern18();
+    pattern20();
 }
