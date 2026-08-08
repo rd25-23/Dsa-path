@@ -353,25 +353,22 @@ void pattern17()
         cout << "\n";
     }
 }
+void pattern18()
+{
+    int n;
+    cout << "Enter the vallue of n for pattern 18:";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << char(64 + n + j - i);
+        }
+        cout << "\n";
+    }
+}
 int main()
 {
-    pattern1();
-    pattern2();
-    pattern3();
-    pattern4();
-    pattern5();
-    pattern6();
-    pattern7();
-    pattern8();
-    pattern9();
-    pattern10();
-    pattern10_2ndway();
-    pattern11();
-    pattern11_2ndway();
-    pattern12();
-    pattern13();
-    pattern14();
-    pattern15();
-    pattern16();
-    pattern17();
+    patt
+    pattern18();
 }
