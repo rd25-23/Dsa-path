@@ -486,7 +486,53 @@ void pattern21()
         }
     }
 }
+void pattern22()
+{
+    int n;
+    cout << "Enter the value of n for pattern 22:";
+    cin >> n;
+    for (int i = 0; i < 2 * n - 1; i++)
+    {
+        for (int j = 0; j < 2 * n - 1; j++)
+        {
+
+            int temp_i = i;
+            int temp_j = j;
+            if (i >= n)
+                temp_i = 2 * n - 2 - i;
+            if (j >= n)
+                temp_j = 2 * n - 2 - j;
+            int sub = min(temp_i, temp_j);
+            cout << n - sub << " ";
+        }
+        cout << "\n";
+    }
+}
+void pattern222()
+{
+    int n;
+    cout << " Enter the value of n for pattern 222:";
+    cin >> n;
+    for (int i = 0; i < 2 * n - 1; i++)
+    {
+        for (int j = 0; j < 2 * n - 1; j++)
+        {
+            int tempi = i;
+            int tempj = j;
+            if (i > n)
+            {
+                tempi = 2 * n - 1 - i - 1;
+            }
+            if (j > n)
+            {
+                tempj = 2 * n - 1 - j - 1;
+            }
+            cout << n - min(tempi, tempj);
+        }
+        cout << "\n";
+    }
+}
 int main()
 {
-    pattern21();
+    pattern222();
 }
