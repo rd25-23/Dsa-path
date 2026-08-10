@@ -527,7 +527,7 @@ void pattern222()
             {
                 tempj = 2 * n - 1 - j - 1;
             }
-            cout << n - min(tempi, tempj);
+            cout << n - min(tempi, tempj) << " ";
         }
         cout << "\n";
     }
