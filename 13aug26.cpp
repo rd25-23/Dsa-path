@@ -51,6 +51,17 @@ void vectorexpalin()
      sit = sit - 1;
      cout << *sit << "\n";
      cout << "end of 4th vector\n";
+
+     vector<int> v5;
+     v5.emplace_back(10);
+     v5.emplace_back(12);
+     v5.emplace_back(14);
+     v5.emplace_back(16);
+     v5.erase(v5.begin() + 2, v5.end() - 1);
+     for (int i = 0; i < v5.size(); i++)
+     {
+          cout << v5[i] << "\n";
+     }
 }
 
 int main()
