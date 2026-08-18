@@ -31,28 +31,24 @@ void vectorexpalin()
      cout << "end of 2nd vector\n";
 
      vector<int> v3;
-     v3.emplace_back(0);
-     v3.emplace_back(1);
-     v3.emplace_back(2);
      v3.emplace_back(3);
+     v3.emplace_back(5);
      vector<int>::iterator it = v3.begin();
      cout << *it << "\n";
      it++;
      cout << *it << "\n";
-     it = it + 2;
+     it = it + 1;
      cout << *it << "\n";
      cout << "end of 3rd vector\n";
 
      vector<int> v4;
-     v4.emplace_back(0);
-     v4.emplace_back(1);
-     v4.emplace_back(2);
-     v4.emplace_back(3);
+     v4.emplace_back(7);
+     v4.emplace_back(9);
      vector<int>::iterator sit = v4.end();
      cout << *sit << "\n";
      sit--;
      cout << *sit << "\n";
-     sit = sit - 2;
+     sit = sit - 1;
      cout << *sit << "\n";
      cout << "end of 4th vector\n";
 }
