@@ -58,13 +58,55 @@ void vectorexpalin()
      v5.emplace_back(14);
      v5.emplace_back(16);
      v5.erase(v5.begin() + 2, v5.end() - 1);
+     // so in simple terms the begin points to first element and end points to last element + 1 so for last elemnt we use end() - 1
+     // and for adding anything to vector we use emplace_back() and for removing we use erase() and for adding we can also use push_back() but emplace_back() is more efficient
      for (int i = 0; i < v5.size(); i++)
      {
           cout << v5[i] << "\n";
      }
 }
+void vectorfunc()
+{
+
+     vector<int> v6;
+     v6.emplace_back(5);
+     v6.emplace_back(14);
+     v6.emplace_back(23);
+     v6.emplace_back(34);
+     cout << "before insertion" << "\n";
+     for (int i = 0; i < v6.size(); i++)
+     {
+          cout << v6[i] << "\n";
+     }
+     v6.insert(v6.begin() + 1, 2, 100);
+     // so in this finction insert first thing is place where i want to inser
+     // second thing is how many number i want to insert and
+     // third thing is the number i want to inser
+     cout << "After insertion" << "\n";
+     for (int i = 0; i < v6.size(); i++)
+     {
+          cout << v6[i] << "\n";
+     }
+
+     vector<int> v7;
+     v7.emplace_back(6);
+     v7.emplace_back(17);
+     v7.emplace_back(28);
+     v7.emplace_back(39);
+     cout << "before insertion" << "\n";
+     for (int i = 0; i < v7.size(); i++)
+     {
+          cout << v7[i] << "\n";
+     }
+     v7.insert(v7.end() - 1, 1, 100);
+     cout << "after insertion" << "\n";
+     for (int i = 0; i < v7.size(); i++)
+     {
+          cout << v7[i] << "\n";
+     }
+}
 
 int main()
 {
-     vectorexpalin();
+     vectorfunc();
 }
