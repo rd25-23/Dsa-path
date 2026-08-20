@@ -99,10 +99,10 @@ void vectorfunc()
           cout << v7[i] << "\n";
      }
      v7.insert(v7.end() - 1, 1, 100);
-     cout << "after insertion" << "\n";
-     for (int i = 0; i < v7.size(); i++)
+     cout << "after insertion in v7" << "\n";
+     for (int i : v7)
      {
-          cout << v7[i] << "\n";
+          cout << i << "\n";
      }
 }
 
